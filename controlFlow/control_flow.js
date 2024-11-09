@@ -49,3 +49,21 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+person = "Employee"
+message = ""
+switch(person){
+    case "Employee":
+        message = "they are authorized to have access to \"Dietary Services\"";
+        break;
+    case "Enrolled Member":
+        message = "they are authorized to have access to \"Dietary Services\" and one-on-one interaction with a dietician.";
+        break;
+    case "Employee":
+        message = "they are authorized to have partial access to facilitate \"Dietary Services\" only.";
+    case "Employee":
+        message = "they need to enroll or at least subscribe first to avail this facility.";
+        break;
+}
+console.log("Message:", message);
+    
